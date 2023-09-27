@@ -1,0 +1,65 @@
+GIT:
+	Git is mainly used to store the code and it enable multiple developers to work 
+together on non-linear development.
+
+Repository:
+	A central location in which data is stored and managed.
+	
+Step 1: Launch Instance(30 gb)
+Step 2: Login as ec2-user
+
+
+commands:
+
+	1. sudo su - (root user)
+	2. git --version 
+	
+	TO INSTALL GIT :
+			yum install git -> clear -> check(git --version)
+			
+	3. mkdir foldername
+	4. cd foldername
+	5. vi filename
+	6. cat filename
+	7. git init (it will initialize a new, or empty repo)
+	8. ls -a (hidden files)
+	9. cd .git/ (moving to git folder)
+	10. ls (listing)
+	11. cd .. (backtrack the previous one )
+	
+	
+	12. git status -s ( ?? filename)-> untracked filename
+					  ( A filename) -> added file 
+	
+	13. git add filename 
+	
+	14. git commit -m "" (commit ur files in local repo)
+	
+	15. git log (it will shows the files and the username who have been created the file)
+	
+	16. configuration commands:
+		-> git config --global user.name ""
+		-> git config --global user.email ""
+		
+	17. git show (it will expanded details of the git object)
+	
+CREATE REPOSITORY IN GITHUB:
+STEPS:
+       REPO NAME(Anything)
+	   PUBLIC
+	   CREATE 
+	   
+	   
+	   18. git push <name> branchname (push local repo to remote repo)
+	   
+	   19. git remote add <name> <url>
+	   
+BRANCHING:
+		
+	   20. git branch ( list all branches and * denote the current branch)
+	   21. git branch -a 
+	   22. git branch name (create new branch)
+	   23. git branch -d name (it will delete a branch)
+	   24. git checkout branchname (it will move to new branch )
+	   25. git clone "URL OF REPO"
+	   
